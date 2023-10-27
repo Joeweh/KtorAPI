@@ -1,1 +1,1 @@
-web: java -jar build/libs/KtorAPI-all.jar --server.port=$PORT
+web: ./build/install/KtorAPI/bin/KtorAPI
