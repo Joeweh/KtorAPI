@@ -1,18 +1,21 @@
-### Get All Users
-GET http://localhost:8080/users
-
 ### Get User By id
-GET http://localhost:8080/users/1
+GET http://localhost:8080/users/dfkjweogihpwaeif
 
 ### Create User
 POST http://localhost:8080/users
 Content-Type: application/json
 
 {
-  "id": "1",
-  "email": "1@gmail.com",
-  "password": "pw1"
+  "email": "joeyqsa211@gmail.com"
+}
+
+### Update User
+PUT http://localhost:8080/users/dfkjweogihpwaeif
+Content-Type: application/json
+
+{
+  "email": "joeyqsa211@gmail.com"
 }
 
 ### Delete User By id
-DELETE http://localhost:8080/users/1
+DELETE http://localhost:8080/users/f960d1e1-cb75-497c-8f26-43997be951f6

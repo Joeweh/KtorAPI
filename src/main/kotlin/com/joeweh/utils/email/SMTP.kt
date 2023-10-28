@@ -1,5 +1,6 @@
 package com.joeweh.utils.email
 
+import io.ktor.server.application.*
 import jakarta.mail.*
 import jakarta.mail.internet.InternetAddress
 import jakarta.mail.internet.MimeBodyPart
@@ -28,7 +29,7 @@ class SMTP {
             message.setRecipients(
                 Message.RecipientType.TO, InternetAddress.parse(recipient)
             )
-            message.subject = "Welcome"
+            message.subject = emailTemplate.subject
 
             val msg = emailTemplate.compose()
 

@@ -11,10 +11,8 @@ import io.ktor.server.routing.*
 
 fun Application.configureRouting() {
     routing {
-        get("/ping") {
-            println("Port: " + System.getenv()["PORT"])
-
-            call.respondText("Pong")
+        get("/") {
+            call.respondText("Server Online")
         }
 
         userRouting()
